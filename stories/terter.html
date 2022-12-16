@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tərtər</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f0f2;
+        }
+
+        #kelbecer .container .kelbecer-title {
+            text-align: center;
+        }
+
+        .intro {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 94%;
+            overflow: hidden;
+            margin: 40px 0;
+        }
+
+        .video-container video {
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+
+        .video-container:after {
+            content: '';
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+
+
+        .kelbecer-info-isgal h3 {
+            text-align: center;
+        }
+
+        .kelbecer-info-isgal .container {
+            display: flex;
+        }
+
+        .kelbecer-info-isgal .container .kelbecer-info-isgal {
+            margin-left: 50px;
+        }
+
+        .kelbecer-info-isgal .container .kelbecer-info-isgal img {
+            width: 73%;
+        }
+
+        .kelbecer-info-isgal-paragraph {
+            width: 65%;
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 30px;
+        }
+
+        .kelbecer-info-isgal-paragraph p {
+            padding: 20px;
+        }
+
+        .swiper {
+            height: 450px;
+            width: 80%;
+            margin: 50px 130px;
+        }
+
+
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgb(0 0 0 / 4%), 0 0 2px rgb(0 0 0 / 6%), 0 0 1px rgb(0 0 0 / 4%);
+        }
+
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            margin-bottom: 73px;
+            object-fit: cover;
+            z-index: -1;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .cart-info {
+            background-color: white;
+            position: relative;
+            bottom: 55px;
+        }
+
+        .cart-info p {
+            color: black;
+            font-size: 16px;
+
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #a9956f;
+        }
+
+        #slider .slider-title {
+            text-align: center;
+            position: relative;
+            top: 25px;
+        }
+
+        #kelbecer-azad h3{
+            text-align: center;
+        }
+
+        #kelbecer-azad .container-azad-paragraph p{
+            background-color: white;
+            width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        #kelbecer-azad .container{
+            display: flex;
+        }
+
+
+        #kelbecer-azad .container-img{
+            margin-left: 50px;
+        }
+
+        #kelbecer-azad .container-img img{
+            width: 100%;
+            height: 200px;
+        }
+        #qubadli-azad-esger .qubadli-azad-esger-video{
+            text-align: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .agdamda{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="kelbecer">
+        <div class="container">
+            <div class="kelbecer-title">
+                <h2>Tərtər rayonu</h2>
+            </div>
+        </div>
+
+        <section class="intro">
+            <div class="video-container">
+                <video src="/img/terter_4k.mp4" autoplay loop playsinline muted></video>
+            </div>
+        </section>
+
+        <div class="kelbecer-info-isgal">
+            <h3>Tərtər rayonu</h3>
+            <div class="container">
+                <div class="kelbecer-info-isgal-paragraph">
+                    <p>
+                        Tərtər rayonu (əvvəlki adı: Mirbəşir rayonu) — Azərbaycan Respublikasında inzibati – ərazi vahidi. Sovet dövründə adı Mirbəşir olmuşdur. Azərbaycan Respublikası Ali Sovetinin 7 fevral 1991-ci il tarixli, 54-XII saylı Qərarı ilə Mirbəşir rayonu Tərtər rayonu adlandırılmışdır.
+
+                        Sahəsi 957 km², əhalisi 102,500 min nəfərdir (01.01.2016). Mərkəzi Tərtər şəhəridir. <br>
+                        Qarabağa çox yaxın olan Tərtər erməni təcavüzündən kifayət qədər əziyyət çəkib. Hal-hazırda Ağdərə rayonundan rayonun tabeliyinə verilmiş yaşayış məntəqələri işğal altındadır. Rayonun bir neçə kəndi cəbhədə yerləşdiyindən Tərtər ətrafında tez-tez döyüşlər gedir. Müharibə dövründə Tərtər rayonundan 307 nəfər şəhid olub. Son 5 il ərzində 15 nəfər tərtərli ermənilərin basdırdığı minalara düşüb <br>
+                        Qarabağ müharibəsinin son mərhələsi 1994-cü ilin aprel-may aylarında "Tərtər əməliyyatı" olmuşdur
+                    </p>
+                </div>
+
+                <div class="kelbecer-info-isgal">
+                    <img src="/img/terter_giris.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="slider">
+        <div class="slider-title">
+            <h3>Tərtər rayonunda görməli Yerlər</h3>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="/img/cileburt_qalası.jpg" style="height: 274px;" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Çiləbürt qalası</b> —  Tərtər rayonunun Çiləbürt kəndində yerləşən tarix-memarlıq abidəsi. Qala, Tərtər və Turağay çaylarının birləşdiyi yerdə, sıldırım qaya üzərində inşa edilmişdir. Orta əsr mənbələrində qala həm də Craberd və Çaraberd adı ilə qeyd edilir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="/img/uckorpe.jpg" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Üç körpə monastırı </b> —  Tərtər rayonunun Təpəkənd kəndi ərazisində yerləşən tarix-memarlıq abidəsi. İnşaat kitabəsinə əsasən monastırın başkilsəsi Sərkis adlı memar tərəfindən, Alban katolikosu VI Simeon və onun qardaşı, arximandrit İqnatios tərəfindən, ziyarətçilərin maddi dəstəyi, və Səfəvi şahı Süleymanın himayəsi ilə inşa edilmişdir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide margin-right">
+                    <div class="cart">
+                        <img src="/img/yelisey.jpg" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Müqəddəs Yelisey kompleksi</b> —  Murovdağın ətəyində, Tərtər rayonunun Suqovuşan və Təpəkənd kəndləri arasında yerləşən tarix-memarlıq kompleksi. Azərbaycan Respublikası Mədəniyyət Nazirliyi tərəfindən yerli əhəmiyyətli abidə kimi qeydiyyata alınmışdır.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="/img/urekveng.jpg" style="height: 274px;" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Ürəkvəng monastırı </b> —  Tərtər rayonunun Talış kəndi yaxınlığında meşəlik ərazidə yerləşən XIII əsrə aid xristian monastır kompleksidir. Qala divarları ilə əhatə edilmiş kompleksən dövrümüzə kilsə, zəng qülləsi, narteks, geniş monastır məzarlığı və çoxsaylı yarımdağılmış vəziyyətdə tikililər çatmışdır.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="/img/gulustanmeliy.jpg" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Gülüstan məlik sarayı</b> —  Tərtər rayonunun Talış kəndində yerləşən XVIII əsrə aid tarix-memarlıq abidəsi. Kompleks Gülüstan məliyi titulunu daşımış Məlik-Bəyləryanlar sülaləsi tərəfindən inşa etdirilmişdir. Qəsr-saray həm də müdafiə xarakteri daşıyırdı. Qəsrin qarnizonu ondan bir qədər şimalda inşa edilmiş kiçik qalada yerləşirdi.
+
+                                 <i>"Ulu Allahın rəhminə möhtac, mərhum Qutlu Xacə Musa oğlunun bu imarəti ustad Şahbənzərin əməlidir"</i> 	
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="/img/suqovusan.jpg" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Suqovuşan körpüsü</b> — Tərtərin Suqovuşan kəndində yerləşir.Kənd 3 oktyabr 2020-ci il tarixində Qarabağda gedən döyüşlər zamanı Azərbaycan Silahlı Qüvvələri tərəfindən azad edilmişdir
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next "></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+
+    <section id="kelbecer-azad">
+        <div class="kelbecer-azad-info">
+            <h3>Tərtərin azad olunması</h3>
+            <div class="container">
+                <div class="container-azad-paragraph">
+                    <p>
+                        Suqovuşan döyüşü — 2020-ci ilin 27 sentyabrından başlamış 3 oktyabr tarixinə kimi davam edən, Azərbaycan Silahlı Qüvvələri və Ermənistan Silahlı Qüvvələri arasında baş verən döyüşlər, İkinci Qarabağ müharibəsində olan döyüşlərdən biri.
+
+                        Nəticədə Tərtər rayonunun Suqovuşan və Talış kəndləri Azərbaycan ordusu tərəfindən azad edilir.
+                        
+                         <br> Suqovuşan döyüşü Azərbaycan Ordusunun İkinci Qarabağ müharibəsində şimal-şərq cəbhəsində baş vermiş ən əhəmiyyətli döyüşlərdən biri olmuşdur.
+                    </p>
+                </div>
+
+                <div class="container-img">
+                    <img src="/img/sazad.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <h4 class="agdamda">İlham Əliyev Talış kəndi və Suqovuşanın azad edilməsindən danışdı</h3>
+
+    <section id="qubadli-azad-esger">
+        <div class="qubadli-azad-esger-video">
+            <video width="820" height="440" controls>
+                <source src="/img/prezident_su.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            /*autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },*/
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

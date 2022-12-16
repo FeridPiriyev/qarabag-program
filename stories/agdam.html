@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ağdam</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f0f2;
+        }
+
+        #kelbecer .container .kelbecer-title {
+            text-align: center;
+        }
+
+        .intro {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 94%;
+            overflow: hidden;
+            margin: 40px 0;
+        }
+
+        .video-container video {
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+
+        .video-container:after {
+            content: '';
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+
+
+        .kelbecer-info-isgal h3 {
+            text-align: center;
+        }
+
+        .kelbecer-info-isgal .container {
+            display: flex;
+        }
+
+        .kelbecer-info-isgal .container .kelbecer-info-isgal {
+            margin-left: 50px;
+        }
+
+        .kelbecer-info-isgal .container .kelbecer-info-isgal img {
+            width: 90%;
+        }
+
+        .kelbecer-info-isgal-paragraph {
+            width: 65%;
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 30px;
+        }
+
+        .kelbecer-info-isgal-paragraph p {
+            padding: 20px;
+        }
+
+        .swiper {
+            height: 450px;
+            width: 80%;
+            margin: 50px 130px;
+        }
+
+
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgb(0 0 0 / 4%), 0 0 2px rgb(0 0 0 / 6%), 0 0 1px rgb(0 0 0 / 4%);
+        }
+
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            margin-bottom: 73px;
+            object-fit: cover;
+            z-index: -1;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .cart-info {
+            background-color: white;
+            position: relative;
+            bottom: 55px;
+        }
+
+        .cart-info p {
+            color: black;
+            font-size: 16px;
+
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #a9956f;
+        }
+
+        #slider .slider-title {
+            text-align: center;
+            position: relative;
+            top: 25px;
+        }
+
+        #kelbecer-azad h3{
+            text-align: center;
+        }
+
+        #kelbecer-azad .container-azad-paragraph p{
+            background-color: white;
+            width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        #kelbecer-azad .container{
+            display: flex;
+        }
+
+
+        #kelbecer-azad .container-img{
+            margin-left: 50px;
+        }
+
+        #kelbecer-azad .container-img img{
+            width: 80%;
+            height: 300px;
+        }
+        #qubadli-azad-esger .qubadli-azad-esger-video{
+            text-align: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .agdamda{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="kelbecer">
+        <div class="container">
+            <div class="kelbecer-title">
+                <h2>Ağdam rayonu</h2>
+            </div>
+        </div>
+
+        <section class="intro">
+            <div class="video-container">
+                <video src="/img/Ağdamın dron görüntülər.mp4" autoplay loop playsinline muted></video>
+            </div>
+        </section>
+
+        <div class="kelbecer-info-isgal">
+            <h3>Ağdam rayonu</h3>
+            <div class="container">
+                <div class="kelbecer-info-isgal-paragraph">
+                    <p>
+                        8 avqust 1930-cu ildə yaradılıb. Sahəsi 1150 km², əhalisi 153000 olan rayonun relyefi əsasən düzənlik, qismən dağlıqdır. "Ağdam" sözü qədim türk dilində "kiçik qala" deməkdir. Uzaq keçmişdə bu ərazidə yaşamış türkdilli qəbilələr özlərini müdafiə etmək üçün əsasən kiçik qalalar tikirdilər. Zaman keçdikcə bu şəhərin adının mənası dəyişib. XVIII əsrin birinci yarısında Qarabağlı Pənahəli xan bu şəhərdə özü üçün ağ daşdan imarət tikdirmək barədə əmr verib. Həmin imarət uzun müddət ətraf kəndlərin sakinləri üçün bir növ oriyentirə çevrilib. Bu mənada "Ağdam" günəş şüaları ilə nurlanmış işıqlı, ağ ev deməkdir.
+                        <br> Erməni işğalından əvvəl rayonda 54 tibb müəssisəsi, 79 mədəniyyət ocağı , 15 şərab zavod, 1 şampan zavodu, 10 istirahət mərkəzi, Qarabağın ən böyük musiqi məktəbləri bu rayonda yerləşir.
+
+                        Birinci Qarabağ müharibəsi zamanı Qəhrəman rayon adını alıb. Ağdamın şəhid sayı 6570 nəfər, Milli Qəhrəmanı 16 nəfər, döyüşlərdə iştirak edən ağdamlı sayı 40,000 nəfər, ağdamlı Qarabağ qazisi 4950 nəfər.
+                        
+                        Qarabağ müharibəsinin ilk şəhidlərin Ağdam rayonu verib. 22.02.1988-ci ildə Əli Hacıyev və Bəxtiyar Quliyev.
+                    </p>
+                </div>
+
+                <div class="kelbecer-info-isgal">
+                    <img src="/img/agdam_unutma.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="slider">
+        <div class="slider-title">
+            <h3>Ağdam rayonunda görməli Yerlər</h3>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="/img/besikdag-kilsesi.jpg" style="height: 274px;" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Beşikdağ kilsəsi</b> — və ya Vəngəsər kilsəsi,Ağdərədən Xankəndinə gedən yolun sağ tərəfində, Xaçınçayın sahilindəki Beşikdağ dağında yerləşən VII əsrə aid kilsədir. Kilsə Şahbulaq qalasına yaxın yerləşir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="/img/Shahbulag_castle.jpg" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Şah bulaq qalası</b> — və ya Tərnəküt qalası,Qarabağ xanı Pənahəli xan tərəfindən 1751–1752-ci illərdə inşa etdirilmiş XVIII əsr qala divarları. Memarlıq abidəsinin tikinti işləri Ağdamın Şahbulaq adlı ərazisində başlamışdır. Ehtimal ki, qalanın adı da burada yerləşən gursulu bulaqın adından – Şahbulağından götürülmüşdür.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide margin-right">
+                    <div class="cart">
+                        <img src="/img/Panah_Ali_Khan’s_Palace.jpg" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Pənahəli xan sarayı</b> —  Ağdam şəhərində yerləşən və birinci Qarabağ xanı Pənahəli xanın yay sarayı olmuş XVIII əsrə aid tarix-memarlıq abidəsidir.Pənahəli xanın Ağdamdakı sarayı,iki binadan ibarətdir.Bu kompleks Pənahəli xanın 1738-ci ildə,Qarabağda xanlıq quruculuğuna başladığı ilk illərdə inşa edilmişdir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="/img/Agdam_cuma_mascid.jpg" style="height: 274px;" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Cümə məscidi</b> — Ağdam şəhərindəki Cümə məscidi Kərbəlayi Səfixan Qarabağı adlı memar tərəfindən 1868–1870-ci illərdə tikilmişdir.Cümə məscidi erməni işğalından sonra qismən dağıdılmışdır.Məscid Ağdam şəhərində tam dağıdılmayan tək tikilidir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="/img/Aqdam_-Qutlu_Musa_Türbəsi_1314.jpg" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Qutlu Musa türbəsi</b> — Ağdam rayonunun Xaçın Türbətli kəndində Elxanilər dövrünün xatirə memarlığının dəyərli bir abidəsi qalmışdır.Xalq arasında "Sarı Musa türbəsi" adlanan bu abidənin interyerində,giriş qapısının üstündəki inşaat kitabəsində bildirilir:
+
+                                 <i>"Ulu Allahın rəhminə möhtac, mərhum Qutlu Xacə Musa oğlunun bu imarəti ustad Şahbənzərin əməlidir"</i> 	
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="/img/Gavurqala_bərpa.jpg" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Gavur qala</b> —Ağdam rayonunun Boyəhmədli kəndi ərazisində yerləşir. Mərkəz hissəsi düz səthlidir. Ətraf ərazidən 6–8 m yüksəklidədir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next "></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+
+    <section id="kelbecer-azad">
+        <div class="kelbecer-azad-info">
+            <h3>Ağdam rayonunun Azad Olunması</h3>
+            <div class="container">
+                <div class="container-azad-paragraph">
+                    <p>
+                        Ağdam rayonunu,Cənab Ali Baş Komandan İlham Əliyevin uğurlu siyasəti nəticəsində heç bir şəhid vermədən işğaldan azad olmuşdur. <br>  Azərbaycan Respublikasının Prezidenti cənab İlham Əliyev no­yabrın 20-də xalqa müraciətində Ağdam ra­yonunun yağı tapdağından xilas edilməsini noyabrın 10-da imzalanan üçtərəfli Bəyanatın nəticəsi kimi dəyərləndirib. Üçtərəfli bəyanat Azərbaycanın Qələbəsidir, torpaqlarımızın qayıtmasıdır, bayrağımızın ucaldılmasıdır. Azərbaycan Ağdam rayonunu hərbi əməliyyat keçirmədən, siyasi yolla işğaldan azad edərək öz yurisdiksiyasına qaytarır. Bu gün yaşadığımız günlər, yaşadığımız anlar hər bir azərbaycanlının yaddaşında əbədi qalacaq.
+                    </p>
+                </div>
+
+                <div class="container-img">
+                    <img src="/img/agdam_azad.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <h3 class="agdamda">İlham Əliyev və birinci xanım Mehriban Əliyeva işğaldan azad edilmiş Ağdam şəhərində olublar</h3>
+
+    <section id="qubadli-azad-esger">
+        <div class="qubadli-azad-esger-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XahMlzzAn2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            /*autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },*/
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

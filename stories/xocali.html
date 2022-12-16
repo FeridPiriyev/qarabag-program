@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xocalı</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f0f2;
+        }
+
+        #rayon .container .rayon-title {
+            text-align: center;
+        }
+
+        .intro {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 94%;
+            overflow: hidden;
+            margin: 40px 0;
+        }
+
+        .video-container video {
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+
+        .video-container:after {
+            content: '';
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+
+
+        .rayon-info-isgal h3 {
+            text-align: center;
+        }
+
+        .rayon-info-isgal .container {
+            display: flex;
+        }
+
+        .rayon-info-isgal .container .rayon-info-isgal {
+            margin-left: 50px;
+        }
+
+        .rayon-info-isgal .container .rayon-info-isgal img {
+            width: 90%;
+        }
+
+        .rayon-info-isgal-paragraph {
+            width: 65%;
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 30px;
+        }
+
+        .rayon-info-isgal-paragraph p {
+            padding: 20px;
+        }
+
+        .swiper {
+            height: 450px;
+            width: 80%;
+            margin: 50px 130px;
+        }
+
+
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgb(0 0 0 / 4%), 0 0 2px rgb(0 0 0 / 6%), 0 0 1px rgb(0 0 0 / 4%);
+        }
+
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            margin-bottom: 73px;
+            object-fit: cover;
+            z-index: -1;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .cart-info {
+            background-color: white;
+            position: relative;
+            bottom: 55px;
+        }
+
+        .cart-info p {
+            color: black;
+            font-size: 16px;
+
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #a9956f;
+        }
+
+        #slider .slider-title {
+            text-align: center;
+            position: relative;
+            top: 25px;
+        }
+
+        #rayon-azad h3 {
+            text-align: center;
+        }
+
+        #rayon-azad .container-azad-paragraph p {
+            background-color: white;
+            width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        #rayon-azad .container {
+            display: flex;
+        }
+
+
+        #rayon-azad .container-img {
+            margin-left: 50px;
+        }
+
+        #rayon-azad .container-img img {
+            width: 80%;
+            height: 300px;
+        }
+
+        .qubadli-gormeli-video {
+            margin: 30px 0;
+        }
+
+        .qubadli-gormeli-video video {
+            min-width: 100%;
+
+        }
+
+        #qubadli-azad-esger .qubadli-azad-esger-video{
+            text-align: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .dehset{
+            text-align: center;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="rayon">
+        <div class="container">
+            <div class="rayon-title">
+                <h2>Xocalı rayonu</h2>
+            </div>
+        </div>
+
+        <section class="intro">
+            <div class="video-container">
+                <video src="/img/xocali 4k-video.mp4" autoplay loop playsinline muted></video>
+            </div>
+        </section>
+
+        <div class="rayon-info-isgal">
+            <h3>Xocalı rayonu</h3>
+            <div class="container">
+                <div class="rayon-info-isgal-paragraph">
+                    <p>
+                        Rayonun ərazisi 1991–1992-ci illərdə erməni silahlı qüvvələri tərəfindən işğal edilmişdir. Sahəsi 0,94 min kv. km, əhalisi 26,0 min nəfərdi (01.01.2010). Xocalı rayonu ilə Bakı arasında olan məsafə 375 kilometrdir. Rayonda 1 şəhər, 1 qəsəbə (Əsgəran), 50 kənd olmuşdur. Mərkəzi Xocalı şəhəridir.Xocalı şəhəri 1992-ci ilin 26 fevral tarixindən Ermənistan tərəfindən işğal olunub. <b>Xocalı soyqırımı -</b>1992-ci il fevralın 25-dən 26-na keçən gecə Ermənistan Silahlı Qüvvələri tərəfindən Rusiyanın 366-cı motoatıcı alayının iştirakı ilə Xocalı şəhərini işğal edərkən, etnik azərbaycanlılara qarşı baş vermiş soyqırımdır.Xocalı soyqırımı nəticəsində 63-ü uşaq, 106-sı qadın, 70-i qoca və qarı olmaqla, 613 Xocalı sakini qətlə yetirilib, 8 ailə tamamilə məhv edilib, 25 uşaq hər iki valideynini, 130 uşaq valideynlərindən birini itirib.Düşmən gülləsindən 76-sı uşaq olmaqla, 487 nəfər yaralanıb. 1275 nəfər əsir götürülüb. Əsir götürülənlərdən 150 nəfərinin, o cümlədən 68 qadın və 26 uşağın taleyi bu günədək məlum deyil. <br> <i>İkinci Qarabağ müharibəsinin nəticələrinə əsasən imzalanmış 10 Noyabr 2020-ci il tarixli üçtərəfli bəyanata uyğun olaraq Xocalı şəhəri Rusiya Sülhməramlı kontingentinin nəzarəti altındadır.</i>
+                    </p>
+                </div>
+
+
+        </div>
+    </section>
+
+    <h3 class="dehset">Xocalı faciəsi</h3>
+
+    <section id="qubadli-azad-esger">
+        <div class="qubadli-azad-esger-video">
+            <video width="820" height="440" controls>
+                <source src="/img/Xocalı soyqırımı (1).mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            /*autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },*/
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

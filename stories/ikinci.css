@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f0f2;
+}
+
+.ikinci-muharibe-background-image img {
+    width: 100%;
+    height: 70vh;
+}
+
+#ikinci-muharibe .birinci-muharibe-info {
+    padding: 10px 0;
+}
+
+#ikinci-muharibe .ikinci-muharibe-info h1 {
+    font-weight: 700;
+    color: rgb(216, 149, 25);
+    align-items: center;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+
+
+.width {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.swiper {
+    height: 235px;
+    width: 80%;
+    margin: 50px 130px;
+}
+
+.ikinci-muharibe-sozler {
+    text-align: center;
+    align-items: center;
+}
+
+.muharibe-gun{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.hava-hucumu{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.width-p{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.pua{
+    display: flex;
+    margin-left: 70px;
+}
+
+.width-s{
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+}
+
+.qarabag-azerbaycandir{
+    display: flex;
+    margin-left: 130px;
+}
+
+.qarabag-title{
+    text-align: center;
+    margin: 20px 0;
+}
+
+

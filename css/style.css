@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: #F6F5F2;
+    overflow: hidden;
+}
+
+/*Navbar Start*/
+#navbar{
+    background-color: white;
+}
+
+#navbar .container .row .container-fluid{
+    display: flex;
+}
+
+#navbar .container .container-menu ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.container-fluid{
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Navbar End*/
+
+
+
+#map a:hover{
+    fill: #cc8c31;
+    transition: 0.5s;
+}
+
+#map .map svg{
+    position: relative;
+    bottom: 470px;
+    left: 250px;
+}
+
+
+
+#map .container-menu ul a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+#preloader{
+    background: white no-repeat center center;
+    height: 100vh;
+    width:100%;
+    position: fixed;
+    z-index:100;
+}
+
+#preloader video{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.karabakh{
+    text-align: center;
+    position: relative;
+    top: 20pxF;
+}

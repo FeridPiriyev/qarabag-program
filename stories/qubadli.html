@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qubadlı</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f0f2;
+        }
+
+        #rayon .container .rayon-title {
+            text-align: center;
+        }
+
+        .intro {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 94%;
+            overflow: hidden;
+            margin: 40px 0;
+        }
+
+        .video-container video {
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+
+        .video-container:after {
+            content: '';
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+
+
+        .rayon-info-isgal h3 {
+            text-align: center;
+        }
+
+        .rayon-info-isgal .container {
+            display: flex;
+        }
+
+        .rayon-info-isgal .container .rayon-info-isgal {
+            margin-left: 50px;
+        }
+
+        .rayon-info-isgal .container .rayon-info-isgal img {
+            width: 90%;
+        }
+
+        .rayon-info-isgal-paragraph {
+            width: 65%;
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 30px;
+        }
+
+        .rayon-info-isgal-paragraph p {
+            padding: 20px;
+        }
+
+        .swiper {
+            height: 450px;
+            width: 80%;
+            margin: 50px 130px;
+        }
+
+
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgb(0 0 0 / 4%), 0 0 2px rgb(0 0 0 / 6%), 0 0 1px rgb(0 0 0 / 4%);
+        }
+
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            margin-bottom: 73px;
+            object-fit: cover;
+            z-index: -1;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .cart-info {
+            background-color: white;
+            position: relative;
+            bottom: 55px;
+        }
+
+        .cart-info p {
+            color: black;
+            font-size: 16px;
+
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #a9956f;
+        }
+
+        #slider .slider-title {
+            text-align: center;
+            position: relative;
+            top: 25px;
+        }
+
+        #rayon-azad h3 {
+            text-align: center;
+        }
+
+        #rayon-azad .container-azad-paragraph p {
+            background-color: white;
+            width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        #rayon-azad .container {
+            display: flex;
+        }
+
+
+        #rayon-azad .container-img {
+            margin-left: 50px;
+        }
+
+        #rayon-azad .container-img img {
+            width: 80%;
+            height: 300px;
+        }
+
+        .qubadli-gormeli-video {
+            margin: 30px 0;
+        }
+
+        .qubadli-gormeli-video video {
+            min-width: 100%;
+
+        }
+
+        #qubadli-azad-esger .qubadli-azad-esger-video{
+            text-align: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="rayon">
+        <div class="container">
+            <div class="rayon-title">
+                <h2>Qubadlı rayonu</h2>
+            </div>
+        </div>
+
+        <section class="intro">
+            <div class="video-container">
+                <video src="/img/Qubadli.mp4" autoplay loop playsinline muted></video>
+            </div>
+        </section>
+
+        <div class="rayon-info-isgal">
+            <h3>Qubadlı rayonu</h3>
+            <div class="container">
+                <div class="rayon-info-isgal-paragraph">
+                    <p>
+                        Qubadlı rayonu 14.03.1933-cü ildə yaradılmışdır. Rayonda 1 şəhər (Qubadlı) 93 kənd vardı. Sahəsi
+                        802 kv/km, əhalisi 38,1 min (01.01.2010) nəfərdir. Bərgüşad çayının hər iki sahilində yerləşən
+                        Qubadlı şəhərinin əhalisi 5604 nəfərdir. 30500 nəfərlik Qubadlı əhalisi 94 kənd və bir şəhərdə
+                        məskunlaşırdı. Rayonun əhalisi əsasən kənd təsərrüfatı və heyvandarlıqla məşğul olmuşdur.Ermənistanın Gorus, Qafan rayonları və Zəngilan, Cəbrayıl, Laçın və Xocavənd rayonları ilə həmsərhəddir. Qubadlı şəhəri Qarabağ yaylasının cənub-şərqində, Bazar-çayın sahilində yerləşir.
+                        <br><br>Qubadlı rayonu 31 avqust 1993-cü ildə Ermənistan silahlı birləşmələri tərəfindən işğal
+                        olunmuşdur.
+                    </p>
+                </div>
+
+                <div class="rayon-info-isgal">
+                    <img src="/img/kelbecer.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="qubadli-gormeli">
+        <div class="qubadli-gormeli-video">
+            <video src="/img/Qubadli-gormeli.mp4" autoplay loop playsinline muted></video>
+        </div>
+    </section>
+
+    <section id="rayon-azad">
+        <div class="rayon-azad-info">
+            <h3>Qubadlı rayonunun Azad Olunması</h3>
+            <div class="container">
+                <div class="container-azad-paragraph">
+                    <p>
+                        Qubadlının azad edilməsi üçün aparılan hərbi əməliyyatlar zamanı Qubadlı rayonunun 1 şəhəri və 41 kəndi işğaldan azad edildi. İşğaldan azad edilən yaşayış məntəqələri:
+                        <br><br><b>Şəhər:</b> Qubadlı
+                        <br><b>Kəndlər:</b> Kəndlər: Alaqurşaq, Kürd Mahruzlu, Muğanlı və Zilanlı , Çaytumas, Əfəndilər, Mollabürhan, Padar, Sarıyataq, Yusifbəyli və Xanlıq , Əbilcə, Qiyaslı və Qilican, Kavdadıq, Məmər və Mollalı , İşıqlı, Milanlı və Muradxanlı , Başarat, Qaracallı və Qarakişilər, Balasoltanlı, Mərdanlı və Qəzyan,  Aşağı Mollu, Yuxarı Mollu və Xocik Ballıqaya, Boyunəkər, Çərəli, Hal, Həmzəli, Mahruzlu, Qaraimanlı, Qaraqoyunlu, Tinli, Ulaşlı, Xəndək və Xocahan
+                    </p>
+
+                </div>
+
+                <div class="container-img">
+                    <img src="/img/Qubadlı-azad.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="qubadli-azad-esger">
+        <div class="qubadli-azad-esger-video">
+            <video width="820" height="440" controls>
+                <source src="/img/qubadli-azad-esger.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            /*autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },*/
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

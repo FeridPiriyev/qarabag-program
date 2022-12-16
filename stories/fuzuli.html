@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Füzuli</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f0f2;
+        }
+
+        #rayon .container .rayon-title {
+            text-align: center;
+        }
+
+        .intro {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 94%;
+            overflow: hidden;
+            margin: 40px 0;
+        }
+
+        .video-container video {
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+
+        .video-container:after {
+            content: '';
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+
+
+        .rayon-info-isgal h3 {
+            text-align: center;
+        }
+
+        .rayon-info-isgal .container {
+            display: flex;
+        }
+
+        .rayon-info-isgal .container .rayon-info-isgal {
+            margin-left: 50px;
+        }
+
+        .rayon-info-isgal .container .rayon-info-isgal img {
+            width: 90%;
+        }
+
+        .rayon-info-isgal-paragraph {
+            width: 65%;
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 30px;
+        }
+
+        .rayon-info-isgal-paragraph p {
+            padding: 20px;
+        }
+
+        .swiper {
+            height: 450px;
+            width: 80%;
+            margin: 50px 130px;
+        }
+
+
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgb(0 0 0 / 4%), 0 0 2px rgb(0 0 0 / 6%), 0 0 1px rgb(0 0 0 / 4%);
+        }
+
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            margin-bottom: 73px;
+            object-fit: cover;
+            z-index: -1;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .cart-info {
+            background-color: white;
+            position: relative;
+            bottom: 55px;
+        }
+
+        .cart-info p {
+            color: black;
+            font-size: 16px;
+
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #a9956f;
+        }
+
+        #slider .slider-title {
+            text-align: center;
+            position: relative;
+            top: 25px;
+        }
+
+        #rayon-azad h3{
+            text-align: center;
+        }
+
+        #rayon-azad .container-azad-paragraph p{
+            background-color: white;
+            width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        #rayon-azad .container{
+            display: flex;
+        }
+
+
+        #rayon-azad .container-img{
+            margin-left: 50px;
+        }
+
+        #rayon-azad .container-img img{
+            width: 80%;
+            height: 300px;
+        }
+
+        #fuzuli-azad-esger .fuzuli-azad-esger-video{
+            text-align: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="rayon">
+        <div class="container">
+            <div class="rayon-title">
+                <h2>Füzuli rayonu</h2>
+            </div>
+        </div>
+
+        <section class="intro">
+            <div class="video-container">
+                <video src="/img/fizuli-4k.mp4" autoplay loop playsinline muted></video>
+            </div>
+        </section>
+
+        <div class="rayon-info-isgal">
+            <h3>Füzuli rayonu</h3>
+            <div class="container">
+                <div class="rayon-info-isgal-paragraph">
+                    <p>
+                        1993-cü ildə Füzuli rayonu Ermənistan Silahlı Qüvvələri tərəfindən işğal edilir.
+                        1994-cü il Horadiz əməliyyatı zamanı rayonun bir hissəsi işğaldan azad edilir.Füzuli rayonunun ərazisi 1386 km², əhalisi isə təxminən 144 min nəfərdir. Rayonda 2 şəhər, 16 qəsəbə, 82 kənd və başqa yaşayış məntəqələri vardır. Rayon ərazisindən axan Quruçay, Köndələnçay, Qozluçay, Çərəkən çayları Araz hövzəsinin çaylarıdır.
+
+                        2020-ci ilə qədər rayonun 1993-94-cü illərdə işğaldan azad olunmuş ərazilərində 13 qəsəbə və 24 kənd mövcud olub. Qəsəbələrdən 12-si ("Qayıdış" qəsəbələri) ərazidə yeni salınmış və məcburi köçkün ailələri müvəqqəti olaraq burada yerləşdirilmişlər. 2021-ə qədər ərazidə 51 min nəfər məcburi köçkün məskunlaşmışdır.
+                    </p>
+                </div>
+
+                <div class="rayon-info-isgal">
+                    <img src="/img/füzuli-isgal.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="slider">
+        <div class="slider-title">
+            <h3>Füzuli rayonunda görməli Yerlər</h3>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="/img/fuzuli-karvansara.jpg" style="height: 274px;" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Şah Abbas məscidi Karvansarası və ya Qarğabazar Karvansarası</b> — Füzuli rayonundan 8 kilometr cənubda yerləşən Qarğabazar kəndi qədim yaşayış məskənlərindən biridir. Qədim zamanlarda ölkələrarası ticarət vasitələrini qaydaya salan karvansaralardan həm də poçt-rabitə məqsədi üçün geniş istifadə olunmuşdur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="/img/babı.jpg" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Şeyx Babı türbəsi</b> — Türbə Füzuli rayonunun Babı kəndindədir. Türbədə Şeyx Babı Yaqubi dəfn olunub. Türbə 1273—1274-cü illərdə memar Əli Məcidəddin tərəfindən tikilib. Türbə səkkiz güşəlidir. Ağ daşdan hörülüb və üstü səkkiz güşəli çatma günbəzlə örtülüb.Şeyx Babı türbəsinin xarici səth bölgülərində Mömünə Xatun türbəsinin təsiri görünür.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide margin-right">
+                    <div class="cart">
+                        <img src="/img/şeyx babatın.jpg" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Şah Abbas məscidi və ya Qarğabazar məscid</b> — Şah Abbas məscidi və ya Qarğabazar məscidi — Qarabağın qədim məscidlərindən biri. Füzuli rayonunun Qarğabazar kəndində yerləşir. Məscid kəndin mərkəzindəki sal qayalı təpənin üstündə inşa edilmişdir.Tarixi abidə kimi qorunur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="rayon-azad">
+        <div class="rayon-azad-info">
+            <h3>Füzuli rayonunun Azad Olunması</h3>
+            <div class="container">
+                <div class="container-azad-paragraph">
+                    <p>
+                        27 sentyabr 2020-ci il tarixdə Azərbaycan Ordusu tərəfindən keçirilmiş əks-hücum əməliyyatı nəticəsində rayonun kəndlərindən Qaraxanbəyli, Qərvənd, kənd Horadiz, Aşağı Əbdürrəhmanlı, 9 oktyabr-da Yuxarı Güzlək, Gorazıllı, 14 oktyabr-da Qaradağlı, Xatunbulaq, Qarakollu, 15 oktyabr-da da Arış kəndi işğaldan azad edilib. 17 oktyabr 2020-ci ildə isə Qoçəhmədli, Çimən, Musabəyli, Pirəhmədli, Dədəli, İşıqlı, Cuvarlı kəndləri və Füzuli şəhəri işğaldan tam azad olunmuşdur. Davam edən əməliyyatlar nəticəsində 20 oktyabr-da Dördçinar, Kürdlər, Yuxarı Əbdürrəhmanlı, Qarğabazar, Aşağı Veysəlli, Yuxarı Aybasanlı,Saracıq, 21 oktyabr-da Gecəgözlü, Aşağı Seyidəhmədli, Zərgər kəndləri, 28 oktyabr-da Mandılı, 07 noyabr-da Yuxarı Veysəlli, Yuxarı Seyidəhmədli, Qorqan, Üçüncü Mahmudlu, Qacar və Divanalılar, 09 noyabr-da Qobu Dilağarda, Yal Pirəhmədli, Yağlıvənd, Dilağarda, Seyid Mahmudlu və Ələsgərli kəndləri Azərbaycan Silahlı qüvvələri tərəfindən Ermənistanın işğalından azad olunmuşdur.
+                    </p>
+                </div>
+
+                <div class="container-img">
+                    <img src="/img/fuzuli.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fuzuli-azad-esger">
+        <div class="fuzuli-azad-esger-video">
+            <video width="820" height="440" controls>
+                <source src="/img/Füzuli şəhəri işğaldan azad olunub.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            /*autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },*/
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

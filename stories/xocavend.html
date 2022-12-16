@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xocavənd</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f0f2;
+        }
+
+        #rayon .container .rayon-title {
+            text-align: center;
+        }
+
+        .intro {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 94%;
+            overflow: hidden;
+            margin: 40px 0;
+        }
+
+        .video-container video {
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+
+        .video-container:after {
+            content: '';
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+
+
+        .rayon-info-isgal h3 {
+            text-align: center;
+        }
+
+        .rayon-info-isgal .container {
+            display: flex;
+        }
+
+        .rayon-info-isgal .container .rayon-info-isgal {
+            margin: 30px 50px;
+            
+        }
+
+        .rayon-info-isgal .container .rayon-info-isgal img {
+            width: 90%;
+        }
+
+        .rayon-info-isgal-paragraph {
+            width: 65%;
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 30px;
+        }
+
+        .rayon-info-isgal-paragraph p {
+            padding: 20px;
+        }
+
+        .swiper {
+            height: 450px;
+            width: 80%;
+            margin: 50px 130px;
+        }
+
+
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgb(0 0 0 / 4%), 0 0 2px rgb(0 0 0 / 6%), 0 0 1px rgb(0 0 0 / 4%);
+        }
+
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            margin-bottom: 73px;
+            object-fit: cover;
+            z-index: -1;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .cart-info {
+            background-color: white;
+            position: relative;
+            bottom: 55px;
+        }
+
+        .cart-info p {
+            color: black;
+            font-size: 16px;
+
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #a9956f;
+        }
+
+        #slider .slider-title {
+            text-align: center;
+            position: relative;
+            top: 25px;
+        }
+
+        #rayon-azad h3 {
+            text-align: center;
+        }
+
+        #rayon-azad .container-azad-paragraph p {
+            background-color: white;
+            width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        #rayon-azad .container {
+            display: flex;
+        }
+
+
+        #rayon-azad .container-img {
+            margin-left: 50px;
+        }
+
+        #rayon-azad .container-img img {
+            width: 80%;
+            height: 300px;
+        }
+
+        .xocavend-gormeli-video {
+            margin: 30px 0;
+        }
+
+        .xocavend-gormeli-video video {
+            min-width: 100%;
+
+        }
+
+        #xocavend-azad-esger .xocavend-azad-esger-video {
+            text-align: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="rayon">
+        <div class="container">
+            <div class="rayon-title">
+                <h2>Xocavənd rayonu</h2>
+            </div>
+        </div>
+
+        <section class="intro">
+            <div class="video-container">
+                <video src="../img/xocavend-background.mp4" autoplay loop playsinline muted></video>
+            </div>
+        </section>
+
+        <div class="rayon-info-isgal">
+            <h3>Xocavənd rayonu işğalı</h3>
+            <div class="container">
+                <div class="rayon-info-isgal-paragraph">
+                    <p>
+                        Xocavənd rayonu 1992-ci il oktyabrın ayının 2-də Ermənistan silahlı birləşmələri və onların
+                        havadarları tərəfindən işğal edilib. İşğal nəticəsində rayonun azərbaycanlılar yaşayan 10
+                        kəndində 1723 yaşayış evi ermənilər tərəfindən yandırılaraq əmlakları talan edilib, 47 sənaye,
+                        144 kənd təsərrüfatı obyekti dağıdılaraq viran edilib. Erməni vandalları tərəfindən 17 təhsil
+                        müəssisəsi, 4 məktəbəqədər tərbiyə ocağı, 32 səhiyyə müəssisəsi, 59 mədəniyyət obyekti, 10
+                        tarixi abidə dağıdılıb. Rayonun infrastrukturuna aid olan 12 rabitə qovşağı, 341 km avtomobil
+                        yolları, 32 körpü, 42 su anbarı və 316 km su kəməri xətti dağıdılıb, talan edilərək yararsız
+                        hala salınıb. İşğal nəticəsində vurulmuş maddi, mənəvi ziyanla barəbər, rayonun bitki və meşə
+                        örtüyünə də böyük miqdarda zərər dəyib. Belə ki, rayonun 1202 ha meşə sahəsindəki qiymətli ağac
+                        növləri qırılaraq məhv edilib.Bunu eliyən isə Erməni separatçılarıdır
+
+                        Xocavəndlilər 13 nəfəri qadın, 13 nəfəri uşaq olmaqla 145 nəfər şəhid verib, rayon sakinlərindən
+                        300 nəfərdən çox insan sağlamlığını itirib və ya əlil olub, 243 uşaq valideynlərindən birini, 68
+                        qadın həyat yoldaşını itirib. Müxtəlif dövrlərdə girov götürülmüş 110 nəfər dinc sakinlərdən 49
+                        nəfəri əsir və girovluqda olarkən erməni terroru və vəhşiliyinin qurbanı olub, bir ailədən olan
+                        3 uşaq hər iki valideynini itirib.
+                    </p>
+                </div>
+
+                <div class="rayon-info-isgal">
+                    <img src="../img/xocavend-isgal.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="slider">
+        <div class="slider-title">
+            <h3>Xocavənd rayonunda görməli Yerlər</h3>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="../img/azix.jpg" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Azıx mağarası</b> — Azıx mağarasının sahəsi 800 kv km-dir. Burada uzunluğu 600 metrə qədər uzanan 8 dəhliz vardır. Dəhlizlərin bəzilərinin hündürlüyü 20–25 metrə qədərdir.Azıx mağarası Daş dövrü insanlarının yaşayış yeri kimi məşhurdur.Mağara 1960-cı ildə Məmmədəli Hüseynovun rəhbərliyi ilə "Paleolit Arxeoloji Ekspedisiyası" tərəfindən aşkar olunmuşdur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="../img/ktiş.jpeg"alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Ktiş Qalası</b> — Azərbaycan Respublikası Xocavənd rayonu ərazisində yerləşən qədim qala. Qala sıldırım dağın zirvəsində yerləşir. Dövrümüzə yalnız xarabalıqları çatmış bu möhtəşəm qalanın dəqiq inşa tarixi bilinmir. Lakin qalanın adı mənbələrdə Azərbaycan ərəblər tərəfindən fəth edildikdən sonra çəkilməyə başlayır. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="../img/tağlar.jpg" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Tağlar</b> — ağlar mağarası paleolit ​​dövründə Mousterian mədəniyyətinin tarixdən əvvəlki insanların məskunlaşdığı arxeoloji ərazidir. Mağara Azərbaycanda,Böyük Tağlar kəndinin cənub hissəsində, Quruçayın sol sahilində yerləşir. Burada 64-24 min il əvvəl qədim insanlar yaşayıb.000-dən çox daş alət, 2000-dən çox heyvan sümüyü tapılmışdır.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="../img/kətəvərəng.jpeg" style="height: 274px;" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Katarovəng monastır</b> — Xocavənd rayonunun Çaylaqqala və Köhnə Tağlar kəndləri arasında, Ziyarət dağının zirvəsində yerləşən tarix-memarlıq abidəsi. Monastrın adı mənbələrdə Qafqaz Albaniyasında IV əsrə aid hadisələrlə bağlı xatırlansa da, dövrümüzə çatmış tikili XVII əsrə aiddir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="../img/nergiztepe.jpg" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Nərgiztəpə</b> — Azərbaycanın Xocavənd rayonu ərazisində qədim yaşayış yeri. Yaşayış yeri təxminən 1 hektardan çox ərazini əhatə edir.
+
+                                1993-cü il aprelin 17-də Xocavəndin yaxınlığındakı alınmaz qala olan qədim Nərgiz təpə uğrunda döyüş oldu.Bir neçə dəfə həmlə etdikdən sonra, alınıb-verildikdən sonra, Nərgiz təpəni işğalçıların əlindən ala bildilər.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cart">
+                        <img src="../img/amaras.jpg" alt="">
+                        <div class="cart-info">
+                            <p>
+                                <b>Amaras monastırı</b> — Xocavənd rayonunun Sos kəndi ərazisində yerləşən xristian monastırıdır. Yaxın vaxtlara kimi yerləşdiyi ərazinin həm xristian, həm də müsəlman əhalisi tərəfindən müqəddəs hesab edilmişdir.Həmçinin Amaras ərazisi xristianlığın yayılmasından əvvəl də böyük dini mərkəz olmuşdur. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next "></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+
+    <section id="rayon-azad">
+        <div class="rayon-azad-info">
+            <h3>Xocavənd rayonunun Azad Olunması</h3>
+            <div class="container">
+                <div class="container-azad-paragraph">
+                    <p>
+                        Azərbaycan Silahlı Qüvvələri tərəfindən 2020-ci ilin oktyabr ayının 9-da rayonun Hadrut qəsəbəsi, 15-də Edişə, Düdükçü, Çiraquz, 16-da Xırmancıq, Ağbulaq (Edilli), Axullu, 20-də Ağcakənd, Mülküdərə, Daşbaşı, Günəşli, Çinarlı, 23-də Dolanar, Bünyadlı, 9-da Susanlıq, Domi, Tuğ, Akaku, Azıx, Mets Tağlar, Salakətin, Zoğalbulaq, Arakül, Tağavard, Böyük Tağavard, Zərdanaşen, Şəhər kəndləri işğaldan azad edilmişdir. <br><br>Xocavənd rayonu 1 şəhər (Xocavənd), 2 iri qəsəbə (Hadrut, Qırmızı Bazar) və 81 kəndi birləşdirir. <br><br>Olduqca əlverişli coğrafi mövqeyə və şəraitə malik Xocavənd rayonu Ağdam, Ağcabədi, Füzuli, Cəbrayıl, Qubadlı, Laçın, Şuşa, Xocalı rayonları ilə həmsərhəddir.
+                    </p>
+
+                </div>
+
+                <div class="container-img">
+                    <img src="../img/xocavend-azad.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="xocavend-azad-esger">
+        <div class="xocavend-azad-esger-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2NFohlLcGvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            /*autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },*/
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+xocavend
